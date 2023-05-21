@@ -96,7 +96,7 @@ int main() {
         hres = pclsObj->Get(L"CurrentTemperature", 0, &vtProp, 0, 0);
         if (SUCCEEDED(hres)) {
             // Convert the temperature value to Celsius
-            double temperatureCelsius = (double)vtProp.intVal / 1.0;
+            double temperatureCelsius = (double)vtProp.intVal / 100.0;
             wprintf(L"CPU Temperature: %.1f\u00B0C\n", temperatureCelsius);
 
             VariantClear(&vtProp);
