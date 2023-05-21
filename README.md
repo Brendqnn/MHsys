@@ -1,0 +1,3 @@
+##MHsys##
+
+on windows you cant see your cpu temps...
